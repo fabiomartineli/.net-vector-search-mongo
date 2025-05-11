@@ -1,0 +1,6 @@
+@VectorSearchMongoApi_HostAddress = http://localhost:5064
+
+GET {{VectorSearchMongoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
