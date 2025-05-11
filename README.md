@@ -20,5 +20,11 @@ Este projeto utiliza as seguintes tecnologias:
 - Ollama - Ferramenta utilizada para a geração de embeddings executada localmente
 - OllamaClient - Pacote de integração para facilitar a comunicação com o Ollama API
 
+## Observações
+- A definição da dimensão no index do vetor de busca semântica deve ser compatível com o número de dimensões gerada nos embeddings do modelo de AI escolhido. Nesse exemplo foi utilizado uma dimensão de 1024.
+- O número de candidatos no método de busca vetorial significa a quantidade de registros que serão pré-selecionados e passarão por um filtro de similaridade.
+- O nome do index deve ser o mesmo criado no banco de dados do MongoDB.
+- Caso seja necessário filtros adicionais, os mesmos devem ser informados na criação do index.
+
 ## 🏁 Conclusão
 Este projeto serve como uma introdução prática ao conceito de Vector Searching no MongoDB, demonstrando como é possível realizar buscas semânticas de alta performance utilizando C# e .NET. A combinação de Ollama para geração de embeddings e MongoDB para armazenamento dos vetores fornece um poderoso mecanismo de busca para diversos casos de uso, como recomendação de conteúdo, processamento de linguagem natural e recuperação de informações.
